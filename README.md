@@ -1,4 +1,4 @@
-This project demonstrates a small Sanity + Next.js demo. It contains example schemas and pages using static generation and preview mode.
+This project demonstrates a small Sanity + Next.js demo. The Sanity Studio lives in the `studio` directory with all content schemas and can be built and deployed separately.
 
 ## Getting Started
 
@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Sanity Studio
+
+The Sanity Studio lives in the `studio` directory. Install dependencies and start the Studio with:
+
+```bash
+cd studio
+npm install
+npm run dev
+```
+
+You can also build the Studio for production:
+
+```bash
+npm run build
+```
