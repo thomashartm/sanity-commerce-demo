@@ -13,6 +13,11 @@ First, run the development server:
 ```bash
 npm run dev
 ```
+## Tech Stack
+
+* Sanity
+* Next.js 15
+* React 19
 
 ## Deployment
 
