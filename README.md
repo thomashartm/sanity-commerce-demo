@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This project demonstrates a small Sanity + Next.js demo. It contains example schemas and pages using static generation and preview mode.
 
 ## Getting Started
 
