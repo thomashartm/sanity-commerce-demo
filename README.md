@@ -1,15 +1,19 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sanity Commerce Demo
 
-## Getting Started
+This GitHub repository hosts the Sanity-based commerce demo website covering. 
+It includes domain-specific page schemas, global page configs (Imprint, Careers, Navigation, Branding), shared components and the required cross-cutting concerns (SEO, metadata, caching, access control, versioning), alongside workflow and integration best practices.
+
+# Status
+Work in progress
+
+## Development
 
 First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+
+## Deployment
+
+WIP
