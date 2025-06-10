@@ -1,13 +1,15 @@
-import { useRouter } from 'next/router'
+'use client'
+import { useRouter, useSearchParams } from 'next/navigation'
 import { FormEvent } from 'react'
 
 export default function Login() {
   const router = useRouter()
+  const searchParams = useSearchParams()
 
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     document.cookie = 'auth=true; path=/'
-    const from = (router.query.from as string) || '/'
+    const from = searchParams.get('from') || '/'
     router.replace(from)
   }
 

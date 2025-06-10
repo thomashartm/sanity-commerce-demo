@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import Layout from '../components/Layout'
+import './globals.css'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,12 +23,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const navLinks = [
+    { label: 'Home', href: '/' },
+    { label: 'Trips', href: '/trips' },
+    { label: 'Contact', href: '/contact' }
+  ]
+  const footer = [
+    {
+      heading: 'Links',
+      links: [
+        { label: 'Home', href: '/' },
+        { label: 'Trips', href: '/trips' },
+        { label: 'Contact', href: '/contact' }
+      ]
+    }
+  ]
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Layout navLinks={navLinks} footer={footer}>{children}</Layout>
       </body>
     </html>
   );
